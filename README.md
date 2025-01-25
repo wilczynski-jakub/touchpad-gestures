@@ -59,13 +59,28 @@ A longer hold of four fingers (at least 0.3 s) emualtes Meta+Space keys click - 
 
 ![4-fingers-hold-flypie.gif](gif/4-fingers-hold-flypie.gif)
 
+The above menu's configuration can be found in ![this file](fly-pie.json). 
 
-## Dependencies
 
-To use the touchpad gestures effectively, make sure the following tools are installed on your system:
+## Installation
 
-- **libinput**: Required for capturing touchpad events.  
-- **ydotool**: Used to emulate key presses and mouse clicks.
-- **gnome-settings-daemon** (or equivalent for your desktop environment): Needed for enabling/disabling the on-screen keyboard dynamically.  
+1. Once you have all the dependencies, make sure to run this command before usage:
+```
+chmod +x run.sh
+```
 
-Ensure that `ydotool` is properly configured to run without a password by allowing `sudo` access to the necessary socket. Also, Python is required if using the `getwindow.py` script for app-specific gesture behavior.
+2. If you want this script to always run in the background, edit this file: ![touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the ![run.sh](run.sh) file, in this line:
+```
+ExecStart=/home/username/bin/touchpad-gestures/run.sh
+```
+and move ![touchpad-gestures.service](touchpad-gestures.service) into this directory:
+```
+~/.config/systemd/user/default.target.wants
+```
+and run these commands:
+```
+systemctl --user daemon-reload
+systemctl --user enable touchpad-gestures.service
+systemctl --user start touchpad-gestures.service
+```
+```specific gesture behavior.
