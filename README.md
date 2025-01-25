@@ -117,7 +117,7 @@ ExecStart=/home/username/bin/touchpad-gestures/run.sh
 ```
 and move ![touchpad-gestures.service](touchpad-gestures.service) into this directory:
 ```
-~/.config/systemd/user/default.target.wants
+~/.config/systemd/user/
 ```
 finally, run these commands:
 ```bash
