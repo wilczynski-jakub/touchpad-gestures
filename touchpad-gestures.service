@@ -1,0 +1,14 @@
+[Unit]
+Description=Touchpad Gestures
+After=graphical-session.target
+Requires=graphical-session.target
+
+[Service]
+ExecStartPre=/bin/sleep 2
+ExecStart=/home/username/bin/touchpad-gestures/run.sh
+Environment=DISPLAY=:0
+Restart=always
+
+[Install]
+WantedBy=default.target
+
