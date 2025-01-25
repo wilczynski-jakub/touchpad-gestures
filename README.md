@@ -51,7 +51,7 @@ This gesture has different effects depending on the app:
 
 This gesture has multiple actions. It is best to combine it with two native functions of **[GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks)**: ***Middle Click Paste*** and ***Click the touchpad with three fingers for middle-click***.
 
-Also, most [clipboard managers](https://github.com/SUPERCILEX/gnome-clipboard-history) have the functionality to copy the text you select with your mouse. This allows you to paste different items on middle click, and others on standard paste (Ctrl+V) which this script emulates with a short hold of three fingers (less than half a seconds).
+Also, most [clipboard managers](https://github.com/SUPERCILEX/gnome-clipboard-history) have the functionality to copy the text you select with your mouse. This allows you to paste different items on middle click, and others on standard paste (Ctrl+V) which this script emulates with a short hold of three fingers (less than half a second).
 
 ![3-fingers-hold-paste.gif](gif/3-fingers-hold-paste.gif)
 
