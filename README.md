@@ -49,9 +49,9 @@ This gesture has different effects depending on the app:
 
 ## Three fingers hold
 
-This gesture has multiple actions. It is best to combine it with two native functions of **![GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks)**: ***Middle Click Paste*** and ***Click the touchpad with three fingers for middle-click***.
+This gesture has multiple actions. It is best to combine it with two native functions of **[GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks)**: ***Middle Click Paste*** and ***Click the touchpad with three fingers for middle-click***.
 
-Also, most ![clipboard managers](https://github.com/SUPERCILEX/gnome-clipboard-history) have the functionality to copy the text you select with your mouse. This allows you to paste different items on middle click, and others on standard paste (Ctrl+V) which this script emulates with a short hold of three fingers (less than half a seconds).
+Also, most [clipboard managers](https://github.com/SUPERCILEX/gnome-clipboard-history) have the functionality to copy the text you select with your mouse. This allows you to paste different items on middle click, and others on standard paste (Ctrl+V) which this script emulates with a short hold of three fingers (less than half a seconds).
 
 ![3-fingers-hold-paste.gif](gif/3-fingers-hold-paste.gif)
 
@@ -71,15 +71,15 @@ Swiping with three fingers is used to switch between applications - by emulating
 
 ## Four fingers hold
 
-A short press of four fingers immediately triggers the "Enter" key. It has to be a short hold though, just tapping the touchpad is not enough - due to ![libinput](https://wiki.archlinux.org/title/Libinput)'s limitations (otherwise I would change it to a tap for higher convenience).
+A short press of four fingers immediately triggers the "Enter" key. It has to be a short hold though, just tapping the touchpad is not enough - due to [libinput](https://wiki.archlinux.org/title/Libinput)'s limitations (otherwise I would change it to a tap for higher convenience).
 
 ![4-fingers-hold-enter.gif](gif/4-fingers-hold-enter.gif)
 
-A longer hold of four fingers (at least 0.3 s) emualtes Meta+Space keys click - my shortcut for activiting the **![Fly Pie](https://extensions.gnome.org/extension/3433/fly-pie/)** menu.
+A longer hold of four fingers (at least 0.3 s) emualtes Meta+Space keys click - my shortcut for activiting the **[Fly Pie](https://extensions.gnome.org/extension/3433/fly-pie/)** menu.
 
 ![4-fingers-hold-flypie.gif](gif/4-fingers-hold-flypie.gif)
 
-The above menu's configuration can be found in ![this file](fly-pie.json). 
+The above menu's configuration can be found in ![this file](fly-pie.json).
 
 
 
@@ -89,9 +89,9 @@ The above menu's configuration can be found in ![this file](fly-pie.json).
 
 This script cannot work without all of these dependencies:
 
-1. **![libinput](https://wiki.archlinux.org/title/Libinput)** - it is the core of this script, used for gesture detection from your touchpad.
+1. **[libinput](https://wiki.archlinux.org/title/Libinput)** - it is the core of this script, used for gesture detection from your touchpad.
 
-2. **![ydotool](https://github.com/ReimuNotMoe/ydotool)** - responsible for emulating key clicks.
+2. **[ydotool](https://github.com/ReimuNotMoe/ydotool)** - responsible for emulating key clicks.
 It needs to be run with *sudo*, so you will have to add these lines into your **/etc/sudoers** file:
 ```
 ALL ALL=(ALL) NOPASSWD: /usr/bin/ydotool
@@ -99,9 +99,9 @@ Defaults env_keep += "YDOTOOL_SOCKET"
 ```
 ## Optional
 
-3. **![GNOME Desktop Environment](https://www.gnome.org/)** - the *touch screen* gesture uses ***gsettings*** to activate an on-screen keyboard. If you're not using GNOME, you can probably find a way around it, for example with custom on-screen keyboard apps.
+3. **[GNOME Desktop Environment](https://www.gnome.org/)** - the *touch screen* gesture uses ***gsettings*** to activate an on-screen keyboard. If you're not using GNOME, you can probably find a way around it, for example with custom on-screen keyboard apps.
 
-4. **![Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the ![getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users.
+4. **[Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the ![getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users.
 
 
 # Installation
@@ -111,7 +111,7 @@ Once you have all the dependencies, make sure to run this command before usage:
 chmod +x run.sh
 ```
 
-If you want this script to always run in the background, edit this file: ![touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the ![run.sh](run.sh) file, in this line:
+If you want this script to always run in the background, edit this file: ![touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the ![run.sh](run.sh) file, into this line:
 ```
 ExecStart=/home/username/bin/touchpad-gestures/run.sh
 ```
