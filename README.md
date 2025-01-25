@@ -32,7 +32,7 @@ When touching the screen, the on-screen keyboard appears automatically.
 
 ## One finger hold
 
-This gesture simulates mouse dragging, as it can sometimes be difficult to perform on a touchpad. The mouse's left button is pressed after holding one finger for half a second and is released only after you stop moving the cursor, allowing you to adjust how long the dragging lasts.
+This gesture simulates mouse dragging, as it can sometimes be difficult to do on a touchpad. The mouse's left button is pressed after holding one finger for half a second and is released only after you stop moving the cursor, allowing you to adjust how long the dragging lasts.
 
 ![1-finger-hold.gif](gif/1-finger-hold.gif)
 
