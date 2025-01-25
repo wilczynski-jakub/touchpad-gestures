@@ -1,0 +1,146 @@
+[
+  {
+    "name": "4 fingers hold",
+    "icon": "flypie-edit-center-symbolic",
+    "type": "CustomMenu",
+    "children": [
+      {
+        "name": "Show Desktop",
+        "icon": "preferences-desktop-display-symbolic",
+        "type": "Shortcut",
+        "data": {
+          "shortcut": "<Super>d"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Random text",
+        "icon": "text-editor-symbolic",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Password",
+            "icon": "gcr-password",
+            "type": "Command",
+            "data": {
+              "command": "random-string password"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Surname",
+            "icon": "user-info-symbolic",
+            "type": "Command",
+            "data": {
+              "command": "random-string surname"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Nickname",
+            "icon": "face-monkey-symbolic",
+            "type": "Command",
+            "data": {
+              "command": "random-string nickname"
+            },
+            "angle": -1
+          }
+        ],
+        "angle": -1,
+        "data": {},
+        "showLabels": false
+      },
+      {
+        "name": "Extract Text",
+        "icon": "org.gnome.font-viewer-symbolic",
+        "type": "Command",
+        "data": {
+          "command": "extract-text --do-not-wait"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Screen- shot",
+        "icon": "org.gnome.Screenshot-symbolic",
+        "type": "CustomMenu",
+        "children": [
+          {
+            "name": "Save the whole screen",
+            "icon": "document-revert-symbolic",
+            "type": "Command",
+            "data": {
+              "command": "screenshot save --do-not-wait"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Record screen",
+            "icon": "camera-web-symbolic",
+            "type": "Shortcut",
+            "data": {
+              "shortcut": "<Shift><Control><Super>r"
+            },
+            "angle": -1
+          },
+          {
+            "name": "Copy selected area",
+            "icon": "edit-cut-symbolic",
+            "type": "Command",
+            "data": {
+              "command": "screenshot copy --do-not-wait"
+            },
+            "angle": -1
+          }
+        ],
+        "angle": -1,
+        "data": {},
+        "showLabels": false
+      },
+      {
+        "name": "Highlight an area",
+        "icon": "flypie-opacity-symbolic",
+        "type": "Command",
+        "data": {
+          "command": "highlight-screen-area"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Fly-Pie Settings",
+        "icon": "org.gnome.Settings",
+        "type": "Command",
+        "data": {
+          "command": "gnome-extensions prefs flypie@schneegans.github.com"
+        },
+        "angle": -1
+      },
+      {
+        "name": "Cancel",
+        "icon": "flypie-go-left-symbolic",
+        "type": "Command",
+        "data": {
+          "command": ""
+        },
+        "angle": -1
+      },
+      {
+        "name": "Frequent apps",
+        "icon": "flypie-menu-favorites-symbolic",
+        "type": "FrequentlyUsed",
+        "data": {
+          "maxNum": 7
+        },
+        "angle": -1
+      }
+    ],
+    "id": 0,
+    "shortcut": "<Super>space",
+    "angle": -1,
+    "centered": true,
+    "data": {},
+    "touchButton": false,
+    "superRMB": false,
+    "showLabels": false,
+    "showChildLabels": false
+  }
+]
