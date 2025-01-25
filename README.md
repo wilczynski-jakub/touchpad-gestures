@@ -1,6 +1,6 @@
 # Touchpad Gestures
 
-A bunch of powerful touchpad gestures for Linux that MacOS users can only dream of, and Windows users cannot even imagine.
+A bunch of powerful touchpad gestures for Linux that MacOS users can only dream of, and Windows users can't even imagine.
 
 
 ## Table of Contents
