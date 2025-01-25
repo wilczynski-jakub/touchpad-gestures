@@ -2,9 +2,10 @@
 
 A bunch of powerful touchpad gestures for Linux that MacOS users can only dream of, and Windows users cannot even imagine.
 
+
 ## Table of Contents
 
-1. [Features](#features)
+1. **[Features](#features)**
    - [On-screen keyboard](#on-screen-keyboard)
    - [One finger hold](#one-finger-hold)
    - [Two fingers swipe](#two-fingers-swipe)
@@ -12,11 +13,13 @@ A bunch of powerful touchpad gestures for Linux that MacOS users can only dream 
    - [Three fingers swipe](#three-fingers-swipe)
    - [Four fingers hold](#four-fingers-hold)
     
-2. [Dependencies](#dependencies)
+2. **[Dependencies](#dependencies)**
    - [Required](#required)
    - [Optional](#optional)
      
-3. [Installation](#installation)
+3. **[Installation](#installation)**
+
+
 
 # Features
 
@@ -79,9 +82,10 @@ A longer hold of four fingers (at least 0.3 s) emualtes Meta+Space keys click - 
 The above menu's configuration can be found in ![this file](fly-pie.json). 
 
 
-## Dependencies
 
-### Required
+# Dependencies
+
+## Required
 
 This script cannot work without all of these dependencies:
 
@@ -93,14 +97,14 @@ It needs to be run with *sudo*, so you will have to add these lines into your **
 ALL ALL=(ALL) NOPASSWD: /usr/bin/ydotool
 Defaults env_keep += "YDOTOOL_SOCKET"
 ```
-### Optional
+## Optional
 
 3. **![GNOME Desktop Environment](https://www.gnome.org/)** - the *touch screen* gesture uses ***gsettings*** to activate an on-screen keyboard. If you're not using GNOME, you can probably find a way around it, for example with custom on-screen keyboard apps.
 
 4. **![Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the ![getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users.
 
 
-## Installation
+# Installation
 
 Once you have all the dependencies, make sure to run this command before usage:
 ```
