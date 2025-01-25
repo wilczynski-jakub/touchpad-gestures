@@ -17,7 +17,7 @@ ydt() {
         # release the first key
         ydt key "$first:0"
     else
-        sudo -n YDOTOOL_SOCKET=/tmp/.ydotool_socket ydotool "$@" || notify-send "ydt" "sudo ydotool requires password"
+        sudo -n YDOTOOL_SOCKET=/tmp/.ydotool_socket ydotool "$@" || echo "Error: ydt" "sudo ydotool requires password"
     fi
 }
 
