@@ -99,9 +99,11 @@ Defaults env_keep += "YDOTOOL_SOCKET"
 ```
 ## Optional
 
-3. **[GNOME Desktop Environment](https://www.gnome.org/)** - the *touch screen* gesture uses ***gsettings*** to activate an on-screen keyboard. If you're not using GNOME, you can probably find a way around it, for example with custom on-screen keyboard apps.
+Without these, the script can work but small changes will be needed (described below).
 
-4. **[Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the [getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users.
+3. **[GNOME Desktop Environment](https://www.gnome.org/)** - the *touch screen* gesture uses ***gsettings*** to activate an on-screen keyboard. If you're not using GNOME, you can probably find a way around it - for example with custom on-screen keyboard apps (but just make sure to replace the ***gsettings*** commands with the proper ones in (run.sh)[run.sh]).
+
+4. **[Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the [getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users ([getwindow.py](getwindow.py) will have to be rewritten though).
 
 
 # Installation
