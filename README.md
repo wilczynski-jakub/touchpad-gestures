@@ -79,7 +79,7 @@ A longer hold of four fingers (at least 0.3 s) emualtes Meta+Space keys click - 
 
 ![4-fingers-hold-flypie.gif](gif/4-fingers-hold-flypie.gif)
 
-The above menu's configuration can be found in ![this file](fly-pie.json).
+The above menu's configuration can be found in this file: [fly-pie.json](fly-pie.json).
 
 
 
@@ -101,7 +101,7 @@ Defaults env_keep += "YDOTOOL_SOCKET"
 
 3. **[GNOME Desktop Environment](https://www.gnome.org/)** - the *touch screen* gesture uses ***gsettings*** to activate an on-screen keyboard. If you're not using GNOME, you can probably find a way around it, for example with custom on-screen keyboard apps.
 
-4. **[Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the ![getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users.
+4. **[Focused Window D-Bus](https://extensions.gnome.org/extension/5592/focused-window-d-bus/)** - used by the [getwindow.py](getwindow.py) script, which checks the current window name and enables app-specific gestures. I simply do not know another way to do that in Wayland, but I assume there are alternatives for non-GNOME users.
 
 
 # Installation
@@ -111,11 +111,11 @@ Once you have all the dependencies, make sure to run this command before usage:
 chmod +x run.sh
 ```
 
-If you want this script to always run in the background, edit this file: ![touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the ![run.sh](run.sh) file, into this line:
+If you want this script to always run in the background, edit this file: [touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the ![run.sh](run.sh) file, into this line:
 ```
 ExecStart=/home/username/bin/touchpad-gestures/run.sh
 ```
-and move ![touchpad-gestures.service](touchpad-gestures.service) into this directory:
+and move [touchpad-gestures.service](touchpad-gestures.service) into this directory:
 ```
 ~/.config/systemd/user/
 ```
