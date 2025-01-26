@@ -111,7 +111,7 @@ Once you have all the dependencies, make sure to run this command before usage:
 chmod +x run.sh
 ```
 
-If you want this script to always run in the background, edit this file: [touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the ![run.sh](run.sh) file, into this line:
+If you want this script to always run in the background, edit this file: [touchpad-gestures.service](touchpad-gestures.service) to insert the actual path where you will be storing the [run.sh](run.sh) file, into this line:
 ```
 ExecStart=/home/username/bin/touchpad-gestures/run.sh
 ```
